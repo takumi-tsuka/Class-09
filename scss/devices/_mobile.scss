@@ -1,0 +1,111 @@
+@media (min-width: $mediaSizeMob){
+
+    // nav{
+    //     padding-top: 10%;
+    //     padding-bottom: 10%;
+    // }
+
+    
+
+    header{
+        position: relative;
+        height: 70vh;
+
+        article{
+            width: 100%;
+            height: 100%;
+            background-color: rgba(50,50,50,.5);
+            @include flexColumn;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            row-gap: 4vh;
+
+            > aside{
+                @include flexColumn;
+                color: white;
+                text-align: center;
+                align-items: center;
+                row-gap: 2vh;
+            }
+        }
+
+        p{
+            font-size: 14px;
+        }
+
+        h1{
+            text-transform: capitalize;
+            color: white;
+            font-weight: 300;
+            font-size: 50px;
+        }
+    }
+
+    nav{
+        padding-top: 10%;
+        padding-bottom: 10%;
+        
+        ul{
+            display: none;
+        }
+
+        > section{
+        height: 5vh;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        border-top: 1px solid $defaultgray;
+        border-bottom: 1px solid $defaultgray;
+        }
+
+        > article{
+        display: flex;
+        column-gap: 5vh;
+        text-align: center;
+        font-size: $iconSizeMob;
+        justify-content: center;
+        align-items: center;
+        }
+
+        i{
+        font-size: $iconSizeMob;
+        }
+
+        h1{
+        width: 40%;
+        font-size: 50px;
+        font-weight: 300;
+        text-transform: uppercase;
+        }
+    }
+
+    .features{
+        color: $defaultColor;
+        padding: 5%;
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+        row-gap: 3vh;
+
+        > section{
+            @include flexColumn;
+            row-gap: 2vh;
+        }
+        
+        article{
+            @include flexElement(row,3vh,0)
+        }
+
+        aside{
+            @include flexElement(column,0,3vh)
+        }
+
+        h3{
+            font-size: 28px;
+        }
+
+        i{
+            font-size: 76px;
+            font-weight: 700;
+        }
+    }
+}
