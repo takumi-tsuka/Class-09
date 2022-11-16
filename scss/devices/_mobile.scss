@@ -79,6 +79,26 @@
         }
     }
 
+    footer{
+        width: 90%;
+        @include flexColumn;
+        row-gap: 1vh;
+        align-items: center;
+        color: $defaultColor;
+        padding: 5%;
+        a{
+            text-decoration: none;
+            color: $defaultColor;
+            background-color: $defaultgray;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 5vh;
+            height: 5vh;
+        }
+    }
+
+
     .features{
         color: $defaultColor;
         padding: 5%;
@@ -318,6 +338,5 @@
 
     #vision{
         display: none;
-
     }
 }
