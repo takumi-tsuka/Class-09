@@ -24,6 +24,22 @@
     column-gap: $column;
     row-gap: $row;
 }
+
+@mixin flexText{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin bgImage($url){
+    background-image: url($url);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
 // @include flexContent;
 // @include flexContent(column);
 // @include flexContent(column,center,flex-end)

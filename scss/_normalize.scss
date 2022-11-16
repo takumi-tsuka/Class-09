@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0%;
-    // font-family: $defaultFont;
+    font-family:'Open Sans', sans-serif;
 }
 
 html{
@@ -14,10 +14,18 @@ main > section{
     flex-direction: column;
 }
 
+main > secetion{
+    padding-bottom: 5vh;
+    padding-top: 5vh;
+}
+
 details{
     display: none;
 }
 
+body{
+    border: 1px solid red;
+}
 video{
     object-fit: cover;
     object-position: center;
