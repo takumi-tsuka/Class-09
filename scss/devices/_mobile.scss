@@ -160,8 +160,164 @@
         }
     }
 
-    .contact{
-        
+    .company{
+        @include flexColumn;
+        align-items: center;
+        row-gap: 5vh;
+       
+        img{
+            width: 100%;
+        }
+
+        > section{
+            width: 90%;
+            @include flexColumn;
+            align-items: center;
+        }
+
+        > figure{
+            @include flexColumn;
+            align-items: center;
+            row-gap: 3vh;
+        }
+
+        figcaption{
+            @include flexContent(column,center,center,0,5vh);
+            width: 80%;
+            line-height: 1.5;
+        }
+
+        h2{
+            font-size: $defaultH2SizeMob;
+            font-weight: 400;
+            color: $defaultColor;
+        }
+
+        aside{
+            display: flex;
+            justify-content: right;
+            width: 100%;
+        }
+
+        a{
+            border: 1px solid $defaultColor;
+            font-weight: 400;
+            width: 40%;
+            padding: 2%;
+            font-size: 20px;
+            color: $defaultColor;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        >section{
+            border: 1px solid $defaultColor;
+
+            >article{
+                display: flex;
+                width:100%;
+            }
+
+            p{
+                line-height: 1.5;
+                width: 90%;
+            }
+        }
+
+        article > a{
+            width: 50%;
+            border-bottom: 0px;
+        }
+
+        article > a:last-child{
+            background-color: gainsboro;
+            transform: .4s
+        }
     }
 
+    .contact{
+        @include flexColumn;
+        row-gap: 5vh;
+        
+        >section,
+        form{
+            @include flexColumn;
+        }
+
+        > section{
+            row-gap: 2vh;
+            align-items: center;
+        }
+
+        form{
+            width: 90%;
+            row-gap: 2vh;
+        }
+
+        h4{
+            width: 90%;
+            text-align: right;
+            font-size: $defaultH2SizeMob;
+            font-weight: 300;
+            text-transform: capitalize;
+        }
+
+        aside{
+            display: flex;
+            justify-content: right;
+        }
+
+        [type="submit"]{
+            font-weight: 400;
+            width: 40%;
+            padding: 2%;
+            background-color: white;
+            font-size: 24px;
+            color: $defaultColor;
+        }
+        
+        figure,
+        figcaption{
+            @include flexColumn;
+            align-items: center;
+        }
+        
+        figure{
+            row-gap: 3vh;
+        }
+
+        figcaption{
+            width: 90%;
+            color: $defaultColor;
+            line-height: 1.5;
+        }
+        
+        img{
+            width: 90%;
+
+        }
+        
+        input, textarea{
+            border: 1px solid $defaultgray;
+            padding: 1%;
+        }
+    
+        textarea{
+            height: 30vh;
+            resize: none;
+        }
+    }
+
+    #vision,#mission{
+        border: 1px solid $defaultColor;
+        @include flexColumn;
+        row-gap: 4vh;
+        padding: 5%;
+        width: 90%;
+    }
+
+    #vision{
+        display: none;
+
+    }
 }
