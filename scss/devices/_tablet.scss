@@ -1,0 +1,67 @@
+@media(min-width:$mediaSizeTab){
+
+    nav{
+        padding-top: 0;
+        padding-bottom: 5vh;
+        display: flex;
+        height: 20vh;
+        row-gap: 4vh;
+
+        > article{
+            // border: 1px solid red;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+        }
+        
+        > section{
+            position: fixed;
+            // border: 1px solid red;
+            width: 100%;
+            background-color: white;
+            z-index: 3;
+        }
+
+        ul{
+            display: flex;
+            column-gap: 2vh;
+            width: 100%;
+            justify-content: center;
+        }
+
+        li{
+            display: flex;
+            width: 10%;
+        }
+
+        a{
+            color: $defaultColor;
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 1%;
+            height: 5vh;
+            width: 100%;
+            text-align: center;
+            transition: 4s;
+        }
+        a:hover{
+            background-color: gainsboro;
+            color: $defaultBlue;
+        }
+
+        details{
+            display: none;
+        }
+    }
+
+    .features{
+        > section{
+            flex-direction: row;
+            column-gap: 2vh;
+        }
+    }
+}
