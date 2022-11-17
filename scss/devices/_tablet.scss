@@ -59,9 +59,116 @@
     }
 
     .features{
+        flex-direction: row;
+        row-gap: 5vh;
         > section{
-            flex-direction: row;
-            column-gap: 2vh;
+            flex-direction: column;
+            
+            >article{
+                flex-direction: row;
+                column-gap: 2vh;
+            }
         }
+    }
+
+    .activities{
+        
+        >article{
+            background-position: center;
+        }
+
+        section{
+            width: unset;
+        }
+
+        figure{
+            flex-direction: row;
+            column-gap: 3vh;
+            padding: 1vh;
+        }
+
+        img{
+            width: 15vh;
+            height: 15vh;
+        }
+    }
+
+    .company{
+        img{
+            width: 50%;
+        }
+
+        figcaption{
+            row-gap: 2vh;
+            align-items: flex-start;
+            
+            a{
+                width: 25%;
+                font-size: 18px;
+                transition: .4s;
+
+                &:hover{
+                    background-color: $defaultgray;
+                    color: white;
+                }
+            }
+        }
+
+        >section{
+            >article{
+                width: 90%;
+            }
+        }
+    }
+
+    .contact{
+        padding-right: 10%;        
+        >section{
+            align-items: flex-end;
+        }
+
+        >figure{
+            align-items: flex-end;
+        }
+
+        img{
+            height: 30vh;
+            object-fit: cover;
+            object-position: top;
+            width: 50vh;
+        }
+
+        figcaption{
+            width: 50vh;
+        }
+
+        form{
+            width: 50vh;
+        }
+          
+    }
+    [type="submit"]{
+        transition: 4s;
+
+        &:hover{
+            background-color: $defaultgray;
+            color: white;
+        }
+    }
+
+    .faq{
+        width: 100%;
+        align-items: center;
+
+        >section{
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            row-gap: 4vh;
+        }
+    }
+
+    .accordion{
+        border-top:1px solid ;
     }
 }
