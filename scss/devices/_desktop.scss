@@ -1,0 +1,72 @@
+@media(min-width:$mediaSizeDes){
+    h1{
+        margin:0;
+        padding:0;
+    }
+    nav{
+        flex-direction: column;
+        padding-bottom: 2%;
+        height: fit-content;
+
+        > section{
+            position: static;
+        }
+
+        ul{
+            padding-top: 2px;
+            padding-bottom: 2px;
+        }
+
+        a{
+            padding: 2%;
+            height: fit-content;
+        }
+
+        h1{
+            width: fit-content;
+
+        }
+    }
+
+    main> section{
+        width: 90%;
+    }
+
+    main{
+        align-items: center;
+    }
+
+    .features{
+        justify-content: center;
+        column-gap: 5%;
+
+        >section{
+            width: 40%;
+        }
+
+        article{
+            align-items: center;
+        }
+    }
+
+    .activities{
+        >article{
+            height: 35vh;
+            background-attachment: fixed;
+        }
+
+        >section{
+            width: 90%;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            column-gap: 10%;
+            row-gap: 5vh;
+        }
+
+        figure{
+            width: 45%;
+        }
+    }
+
+}
